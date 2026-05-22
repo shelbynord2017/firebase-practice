@@ -1,10 +1,5 @@
 import React from 'react'
-import { 
-  createUserWithEmailAndPassword, 
-  signInWithEmailAndPassword,
-  signOut,
-  onAuthStateChanged
- } from 'firebase/auth';
+
 
 const Nav = ({ register, login, logout, user, loading }) => {
   return (
@@ -13,14 +8,15 @@ const Nav = ({ register, login, logout, user, loading }) => {
         <button onClick={register} className="btn register__btn">Register</button>
         <button onClick={login} className="btn login__btn">Login</button>
         {loading ?
-         user.email 
-         :
          <>
-          <div className="btn register__btn"></div>
-          <div className="btn login__btn"></div>
+          <div className="skeleton__wrapper">
+            <div className="skeleton skeleton__register--btn"></div>
+            <div className="skeleton skeleton__login--btn"></div>
+          </div>
         </>
-
-         } 
+        :
+        user?.email 
+        } 
       </div>
     </div>
   )
