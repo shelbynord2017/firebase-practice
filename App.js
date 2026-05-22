@@ -25,7 +25,7 @@ import Nav from './components/Nav';
 
   function register() {
     console.log('register')
-    createUserWithEmailAndPassword(auth, 'test2@email.com', 'test123')
+    createUserWithEmailAndPassword(auth, 'test3@email.com', 'test1234')
       .then((user) => {
         console.log(user)
       })
@@ -35,7 +35,7 @@ import Nav from './components/Nav';
   }
 
   function login() {
-    signInWithEmailAndPassword(auth, 'test2@email.com', 'test123')
+    signInWithEmailAndPassword(auth, 'test3@email.com', 'test1234')
     .then(({ user }) => {
       console.log(user)
       setUser(user)
@@ -52,7 +52,13 @@ function logout() {
 
 
   return (
-    <Nav />
+  <Nav 
+    register={register}
+    login={login}
+    logout={logout}
+    user={user}
+    loading={loading}
+  />
   );
 }
 

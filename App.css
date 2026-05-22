@@ -1,11 +1,26 @@
+
+
 .nav__container {
-    background-color: rgb(220, 153, 65);
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(177, 171, 163);
     height: 70px;
 }
 
 .btn {
     font-size: 18px;
     padding: 10px 15px;
-    
+    border-radius: 50px;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
 }
 
+.login__btn {
+    margin-right: 50px;
+    background-color: rgb(120, 120, 198);
+}
+
+.register__btn {
+    background-color: rgb(209, 169, 88);
+}
