@@ -10,6 +10,7 @@ import {
 import Nav from './components/Nav';
 
 
+
  
  function App() {
   const [user, setUser] = React.useState({})
@@ -54,13 +55,7 @@ function logout() {
 
 
   return (
-    <div className="nav__container">
-      <div className="App">
-        <button onClick={register}>Register</button>
-        <button onClick={login}>Login</button>
-        {loading ? 'loading...' : user.email} 
-      </div>
-    </div>
+    <Nav />
   );
 }
 
