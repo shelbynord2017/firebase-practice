@@ -7,11 +7,9 @@ import {
   signOut,
   onAuthStateChanged
  } from 'firebase/auth';
-import Nav from './components/Nav';
 
-
- 
- function App() {
+ <Nav>
+function App() {
   const [user, setUser] = React.useState({})
   const [loading, setLoading] = React.useState(true)
 
@@ -54,14 +52,14 @@ function logout() {
 
 
   return (
-    <div className="nav__container">
-      <div className="App">
-        <button onClick={register}>Register</button>
-        <button onClick={login}>Login</button>
-        {loading ? 'loading...' : user.email} 
-      </div>
+    <div className="App">
+      <button onClick={register}>Register</button>
+      <button onClick={login}>Login</button>
+      <button onClick={logout}>Logout</button>
+      {loading ? 'loading...' : user.email} 
     </div>
   );
+  </Nav>
 }
 
 export default App;
