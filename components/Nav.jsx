@@ -12,7 +12,7 @@ const Nav = ({ register, login, logout, user, loading }) => {
               <div className="skeleton skeleton__login--btn"></div>
             </div>
             ) : user?.email ? (
-            <div className="user__avatar">
+            <div onClick={logout} className="user__avatar">
               {user.email[0].toUpperCase()}
             </div>
             ) : (

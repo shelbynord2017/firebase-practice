@@ -54,9 +54,9 @@
 .skeleton__wrapper {
     display: flex;
     justify-content: flex-end;
-    gap: 15px;
+    gap: 30px;
     align-items: center;
-    margin-right: 170px;
+    margin-right: 60px;
 }
 
 .skeleton {

@@ -15,11 +15,13 @@ import Nav from './components/Nav';
 
   React.useEffect(() => {
      onAuthStateChanged(auth, (user) =>{
-      setLoading(false)
-      console.log(user);
-      if (user) {
-        setUser(user)
-      }
+      setTimeout(() => {
+        setLoading(false)
+        console.log(user);
+        if (user) {
+          setUser(user)
+        }
+      }, 1000)
      })
   }, [])
 
