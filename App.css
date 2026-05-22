@@ -5,12 +5,24 @@
     height: 70px;
 }
 
+.nav__row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.App {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .btn {
     font-size: 18px;
     padding: 10px 15px;
     border-radius: 50px;
     border: none;
     margin-left: 15px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
@@ -21,6 +33,20 @@
 
 .register__btn {
     background-color: rgb(209, 169, 88);
+}
+
+.user__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(120, 120, 198);
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 28px;
+    margin-right: 20px;
 }
 
 /* loading state */
@@ -36,7 +62,6 @@
 .skeleton {
   width: 100%;
   max-width: 100px;
-  height: 50px;
   background-color: rgb(204, 204, 204);
   margin-bottom: 8px;
   border-radius: 50px;
