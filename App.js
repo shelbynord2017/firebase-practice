@@ -9,9 +9,6 @@ import {
  } from 'firebase/auth';
 import Nav from './components/Nav';
 
-
-
- 
  function App() {
   const [user, setUser] = React.useState({})
   const [loading, setLoading] = React.useState(true)

@@ -1,5 +1,4 @@
 import React from 'react'
-import './App.css';
 import { auth } from './firebase/init';
 import { 
   createUserWithEmailAndPassword, 
@@ -8,9 +7,7 @@ import {
   onAuthStateChanged
  } from 'firebase/auth';
 
-
-
-  function App() {
+ function App() {
    const [user, setUser] = React.useState({})
    const [loading, setLoading] = React.useState(true)
  
@@ -51,7 +48,10 @@ import {
    setUser({})
  }
 
-const Nav()) {
+
+  
+
+const Nav = () => {
   return (
     <div className="nav__container">
       <div className="App">
