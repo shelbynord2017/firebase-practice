@@ -12,7 +12,15 @@ const Nav = ({ register, login, logout, user, loading }) => {
       <div className="App">
         <button onClick={register} className="btn register__btn">Register</button>
         <button onClick={login} className="btn login__btn">Login</button>
-        {loading ? 'loading...' : user.email} 
+        {loading ?
+         user.email 
+         :
+         <>
+          <div className="btn register__btn"></div>
+          <div className="btn login__btn"></div>
+        </>
+
+         } 
       </div>
     </div>
   )
